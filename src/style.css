@@ -37,8 +37,8 @@ img {
 .menu-list {
     list-style: none;
     margin: 0;
-    gap: 25px;
-    padding-right: 25px;
+    gap: 34px;
+    padding-right: 24px;
 }
 .menu-item-home a{
     font-family: 'Lato';
@@ -56,9 +56,21 @@ img {
     letter-spacing: 0em;
     color: #404146;
 }
-.search-form {
+.header-search {
+    position: relative;
+}
+.search-button {
+
+}
+.search-input {
+    border: none;
+    width: 100%;
+}
+.header-form {
     border-radius: 27px;
-    Border: 0.5px solid #404146;
+    border: 0.5px solid #404146;
     width: 261px;
     height: 30px;
+    overflow: hidden;
+    display: flex;
 }
