@@ -19,7 +19,28 @@ img {
     font-size: 10px;
     font-weight: 400;
     line-height: 12px;
-    letter-spacing: 0em;
+    margin-top: 24px;
+    margin-bottom: 11px;
+}
+.header-layout {
+    position: relative;
+}
+.header-layout {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.header-layout:after {
+    content: '';
+    display: block;
+    width: 1008px;
+    height: 1px;
+    position: absolute;
+    top: 71px;
+    right: 191px;
+}
+.line-color_gray:after {
+    background:#404146;
 }
 .header-logo a,
 .menu-list a {
@@ -31,21 +52,21 @@ img {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
-    letter-spacing: 0em;
     color: #404146;
+    padding-left: 15px;
 }
 .menu-list {
     list-style: none;
     margin: 0;
     gap: 34px;
     padding-right: 24px;
+    padding-left: 137px;
 }
 .menu-item-home a{
     font-family: 'Lato';
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
-    letter-spacing: 0em;
     color: #07A081;
 }
 .menu-item a {
@@ -53,14 +74,15 @@ img {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
-    letter-spacing: 0em;
     color: #404146;
 }
 .header-search {
     position: relative;
 }
 .search-button {
-
+    border: none;
+    background: transparent;
+    padding: 0 10px 0 0;
 }
 .search-input {
     border: none;
@@ -73,4 +95,38 @@ img {
     height: 30px;
     overflow: hidden;
     display: flex;
+    padding-left: 12px;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #5C5C5C;
+}
+.header-cta {
+    padding-left: 35px;
+    display: flex;
+    gap: 17px;
+}
+.cta-link {
+    position: relative;
+}
+.cart-quantity {
+    padding: 1px 4px;
+    position: absolute;
+    left: 12px;
+    bottom: 18px;
+    z-index: 100;
+    width: 14px;
+    height: 14px;
+    background: #FF3C3C;
+    border-radius: 50%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
 }
