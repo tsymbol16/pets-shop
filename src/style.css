@@ -33,11 +33,12 @@ img {
 .header-layout:after {
     content: '';
     display: block;
-    width: 1008px;
-    height: 1px;
+    width: 75%;
+    height: 0.5px;
     position: absolute;
-    top: 71px;
-    right: 191px;
+    top: 72px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .line-color_gray:after {
     background:#404146;
