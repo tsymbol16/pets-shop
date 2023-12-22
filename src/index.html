@@ -6,9 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Inter:wght@400;700&family=Lato:wght@300;400;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Tinos:wght@700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="./main.js"></script>
 </head>
 <body>
@@ -18,16 +21,16 @@
              <h6 class="offer-text">PUCCI MART WILL PAY YOUR SHIPPING COSTS FOR ORDERS OF <span class="fw-bold">$50</span> OR MORE</h6>   
             </div>
             <div class="header-layout line-color_gray">
-                    <div class="header-logo">
-                        <a href="/" class="full-logo d-flex align-items-center">
-                            <svg width="43" height="45" viewBox="0 0 43 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M27.3926 17.3571C31.5333 17.3571 34.0815 11.25 34.0815 7.39286C34.0815 4.17857 32.4889 0.321428 29.3037 0.321428C25.163 0.321428 22.6148 6.42857 22.6148 10.2857C22.6148 13.5 24.2074 17.3571 27.3926 17.3571ZM15.2889 17.3571C18.4741 17.3571 20.0667 13.5 20.0667 10.2857C20.0667 6.10714 17.5185 0 13.3778 0C10.1926 0 8.6 3.85714 8.6 7.07143C8.28148 11.25 10.8296 17.3571 15.2889 17.3571ZM38.8593 14.1429C34.7185 14.1429 31.8519 19.9286 31.8519 24.1071C31.8519 27 33.1259 29.8929 35.9926 29.8929C40.1333 29.8929 43 24.1071 43 19.9286C43 17.0357 41.4074 14.1429 38.8593 14.1429ZM11.1481 24.1071C11.1481 19.9286 7.96296 14.1429 4.14074 14.1429C1.27407 14.1429 0 17.0357 0 19.9286C0 24.1071 3.18519 29.8929 7.00741 29.8929C9.87407 29.8929 11.1481 27 11.1481 24.1071ZM21.3407 23.4643C14.9704 23.4643 6.37037 33.75 6.37037 40.8214C6.37037 44.0357 8.6 45 11.1481 45C14.9704 45 17.837 42.4286 21.3407 42.4286C24.5259 42.4286 27.3926 45 30.8963 45C33.4444 45 36.3111 44.3571 36.3111 40.8214C36.3111 33.75 27.7111 23.4643 21.3407 23.4643Z" fill="#07A081"/>
-                            </svg>
-                            <div class="logo-text">
+                <div class="header-logo">
+                    <a href="/" class="full-logo d-flex align-items-center">
+                        <svg width="43" height="45" viewBox="0 0 43 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.3926 17.3571C31.5333 17.3571 34.0815 11.25 34.0815 7.39286C34.0815 4.17857 32.4889 0.321428 29.3037 0.321428C25.163 0.321428 22.6148 6.42857 22.6148 10.2857C22.6148 13.5 24.2074 17.3571 27.3926 17.3571ZM15.2889 17.3571C18.4741 17.3571 20.0667 13.5 20.0667 10.2857C20.0667 6.10714 17.5185 0 13.3778 0C10.1926 0 8.6 3.85714 8.6 7.07143C8.28148 11.25 10.8296 17.3571 15.2889 17.3571ZM38.8593 14.1429C34.7185 14.1429 31.8519 19.9286 31.8519 24.1071C31.8519 27 33.1259 29.8929 35.9926 29.8929C40.1333 29.8929 43 24.1071 43 19.9286C43 17.0357 41.4074 14.1429 38.8593 14.1429ZM11.1481 24.1071C11.1481 19.9286 7.96296 14.1429 4.14074 14.1429C1.27407 14.1429 0 17.0357 0 19.9286C0 24.1071 3.18519 29.8929 7.00741 29.8929C9.87407 29.8929 11.1481 27 11.1481 24.1071ZM21.3407 23.4643C14.9704 23.4643 6.37037 33.75 6.37037 40.8214C6.37037 44.0357 8.6 45 11.1481 45C14.9704 45 17.837 42.4286 21.3407 42.4286C24.5259 42.4286 27.3926 45 30.8963 45C33.4444 45 36.3111 44.3571 36.3111 40.8214C36.3111 33.75 27.7111 23.4643 21.3407 23.4643Z" fill="#07A081"/>
+                        </svg>
+                        <div class="logo-text">
                                 <p>PucciMart</p> 
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
+                </div>
                 <nav class="header-menu">
                     <ul class="menu-list d-flex">
                         <li class="menu-item-home">
@@ -83,13 +86,236 @@
         </div>   
     </header>
     <main class="main">
-        <section class="section">
+        <section class="section-template">
             <div class="section-container">
-                <div class="section-content">
-                    <h1 class="section-title">Love your plants Take care of yourself</h1>
-                    
+                <div class="section-content d-flex">
+                    <div class="poster-content">
+                        <h1 class="poster-title">Love your plants Take care of yourself</h1>
+                        <p class="poster-info">5% of every purchase helps rescues</p>
+                        <div class="just-button poster-btn">
+                            <a href="#">SHOP NOW</a>
+                        </div>
+                        <nav class="poster-cta">
+                            <ul class="cta-menu d-flex">
+                                <li class="cta-item">
+                                    <a href="#" class="cta-link">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16.0893C0 24.044 5.77733 30.6587 13.3333 32V20.444H9.33333V16H13.3333V12.444C13.3333 8.444 15.9107 6.22267 19.556 6.22267C20.7107 6.22267 21.956 6.4 23.1107 6.57733V10.6667H21.0667C19.1107 10.6667 18.6667 11.644 18.6667 12.8893V16H22.9333L22.2227 20.444H18.6667V32C26.2227 30.6587 32 24.0453 32 16.0893C32 7.24 24.8 0 16 0C7.2 0 0 7.24 0 16.0893Z" fill="#07A081"/>
+                                        </svg>   
+                                    </a>
+                                </li>
+                                <li class="cta-item">
+                                    <a href="#" class="cta-link">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.6717 15.7217L14.9283 13.975C14.6017 13.8233 14.3333 13.9933 14.3333 14.355V17.645C14.3333 18.0067 14.6017 18.1767 14.9283 18.025L18.67 16.2783C18.9983 16.125 18.9983 15.875 18.6717 15.7217ZM16 0C7.16333 0 0 7.16333 0 16C0 24.8367 7.16333 32 16 32C24.8367 32 32 24.8367 32 16C32 7.16333 24.8367 0 16 0ZM16 22.5C7.81 22.5 7.66667 21.7617 7.66667 16C7.66667 10.2383 7.81 9.5 16 9.5C24.19 9.5 24.3333 10.2383 24.3333 16C24.3333 21.7617 24.19 22.5 16 22.5Z" fill="#07A081"/>
+                                        </svg>                                            
+                                    </a>
+                                </li>
+                                <li class="cta-item">
+                                    <a href="#" class="cta-link">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16 0C7.16429 0 0 7.16429 0 16C0 24.8357 7.16429 32 16 32C24.8357 32 32 24.8357 32 16C32 7.16429 24.8357 0 16 0ZM23.6893 12.0607C23.7 12.2286 23.7 12.4036 23.7 12.575C23.7 17.8179 19.7071 23.8571 12.4107 23.8571C10.1607 23.8571 8.075 23.2036 6.31786 22.0786C6.63929 22.1143 6.94643 22.1286 7.275 22.1286C9.13214 22.1286 10.8393 21.5 12.2 20.4357C10.4571 20.4 8.99286 19.2571 8.49286 17.6857C9.10357 17.775 9.65357 17.775 10.2821 17.6143C9.38474 17.432 8.57812 16.9446 7.99934 16.2349C7.42056 15.5253 7.10531 14.6372 7.10714 13.7214V13.6714C7.63214 13.9679 8.25 14.15 8.89643 14.175C8.35301 13.8128 7.90735 13.3222 7.59897 12.7465C7.29059 12.1709 7.12901 11.528 7.12857 10.875C7.12857 10.1357 7.32143 9.46071 7.66786 8.875C8.66394 10.1012 9.9069 11.1041 11.3159 11.8184C12.725 12.5328 14.2686 12.9427 15.8464 13.0214C15.2857 10.325 17.3 8.14286 19.7214 8.14286C20.8643 8.14286 21.8929 8.62143 22.6179 9.39286C23.5143 9.225 24.3714 8.88929 25.1357 8.43929C24.8393 9.35714 24.2179 10.1321 23.3929 10.6214C24.1929 10.5357 24.9643 10.3143 25.6786 10.0036C25.1393 10.7964 24.4643 11.5 23.6893 12.0607Z" fill="#07A081"/>
+                                        </svg>                                             
+                                    </a>
+                                </li>
+                                <li class="cta-item">
+                                    <a href="#" class="cta-link">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.9957 10.6645C13.0578 10.6645 10.6602 13.0621 10.6602 16C10.6602 18.9379 13.0578 21.3355 15.9957 21.3355C18.9336 21.3355 21.3312 18.9379 21.3312 16C21.3312 13.0621 18.9336 10.6645 15.9957 10.6645ZM31.9982 16C31.9982 13.7905 32.0182 11.6011 31.8941 9.39566C31.7701 6.83398 31.1857 4.56048 29.3125 2.68725C27.4352 0.810019 25.1657 0.229638 22.604 0.105556C20.3946 -0.0185251 18.2052 0.00148811 15.9997 0.00148811C13.7902 0.00148811 11.6008 -0.0185251 9.39536 0.105556C6.83368 0.229638 4.56019 0.814022 2.68696 2.68725C0.809722 4.56449 0.22934 6.83398 0.105259 9.39566C-0.0188226 11.6051 0.00119056 13.7946 0.00119056 16C0.00119056 18.2054 -0.0188226 20.3989 0.105259 22.6043C0.22934 25.166 0.813725 27.4395 2.68696 29.3127C4.56419 31.19 6.83368 31.7704 9.39536 31.8944C11.6048 32.0185 13.7943 31.9985 15.9997 31.9985C18.2092 31.9985 20.3986 32.0185 22.604 31.8944C25.1657 31.7704 27.4392 31.186 29.3125 29.3127C31.1897 27.4355 31.7701 25.166 31.8941 22.6043C32.0222 20.3989 31.9982 18.2095 31.9982 16ZM15.9957 24.2094C11.4527 24.2094 7.78631 20.543 7.78631 16C7.78631 11.457 11.4527 7.79061 15.9957 7.79061C20.5387 7.79061 24.2051 11.457 24.2051 16C24.2051 20.543 20.5387 24.2094 15.9957 24.2094ZM24.5413 9.37164C23.4806 9.37164 22.6241 8.51508 22.6241 7.45438C22.6241 6.39369 23.4806 5.53713 24.5413 5.53713C25.602 5.53713 26.4586 6.39369 26.4586 7.45438C26.4589 7.70625 26.4095 7.95571 26.3133 8.18846C26.217 8.42122 26.0758 8.6327 25.8977 8.8108C25.7196 8.98889 25.5082 9.13011 25.2754 9.22635C25.0426 9.32259 24.7932 9.37196 24.5413 9.37164Z" fill="#07A081"/>
+                                        </svg>                                            
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="section-wrapper">
+                        <div class="section-images d-flex">
+                            <div class="market-img">
+                                <img src="./img/market-hero_logo.png" alt="site">
+                            </div>
+                            <div class="dog-img">
+                                <img src="./img/hero-dog.png" alt="dog">
+                            </div>
+                        </div>
+                        <div class="section-count">
+                            <div class="count-frame">
+                                <p class="count-number">18 K+</p>
+                                <p class="count-text">Happy Customer</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+            </div>
+        </section>
+        <section class="section-navigation">
+            <div class="navigation-container">
+                <div class="navigation-content">
+                    <div class="shop-content">
+                        <div class="shop-navigation">
+                            <h2 class="navigation-title">Shop By Pet</h2>
+                            <p class="navigation-overview">Shop the latest high-end designer products for your pups at our luxury dog boutique!</p>
+                            <div class="navigation-slider">
+                                <a href="#" class="navigation-link navigation-link_cat">
+                                    <img src="./img/cat.png" alt="">
+                                    <span>Cats</span>
+                                </a>
+                                <a href="#" class="navigation-link navigation-link_bird">
+                                    <img src="./img/bird.png" alt="">
+                                    <span>Bird</span>
+                                </a>
+                                <a href="#" class="navigation-link navigation-link_dog">
+                                    <img src="./img/dog.png" alt="">
+                                    <span>Dogs</span>
+                                </a>
+                                <a href="#" class="navigation-link navigation-link_fish">
+                                    <img src="./img/goldfish.png" alt="">
+                                    <span>Fish</span>
+                                </a>
+                                <a href="#" class="navigation-link navigation-link_rabbit">
+                                    <img src="./img/rabbit.png" alt="">
+                                    <span>Rabbit</span>
+                                </a>
+                            </div> 
+                        </div>
+                        <div class="navigation-info">
+                            <h2 class="navigation-title navigation-title_post">All Pet</h2>
+                            <p class="navigation-overview navigation-overview_post">Shop the latest high-end designer products for your pups at our luxury dog boutique!</p>
+                        </div>
+                        <div class="pet-swiper">
+                            <div class="swiper" id="slider1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide custom-slide">
+                                        <div class="slide-body">
+                                            <div class="slide-img">
+                                                <img src="./img/parrot.png" alt="lucky">
+                                            </div>
+                                            <div class="slide-title slide-title_parrot">Lucky 5</div>
+                                            <div class="slide-overview slide-overview_parrot">Male love bird (mixed)</div>
+                                            <div class="slide-price slide-price_parrot">
+                                                <span class="slide-price-sale">$269</span>
+                                                <span class="slide-price-original text-decoration-line-through">$300</span>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                    <div class="swiper-slide custom-slide">
+                                        <div class="slide-body">
+                                            <div class="slide-img">
+                                                <div class="slide-badge">-20%</div>
+                                                <img src="./img/fish.png" alt="lucky">
+                                            </div>
+                                            <div class="slide-title slide-title_fish">Lucky 2</div>
+                                            <div class="slide-overview slide-overview_fish">Zebra danio aquarium  Fish</div>
+                                            <div class="slide-price slide-price_fish">
+                                                <span class="slide-price-sale">$269</span>
+                                                <span class="slide-price-original text-decoration-line-through">$300</span>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="swiper-slide custom-slide">
+                                        <div class="slide-body">
+                                            <div class="slide-img">
+                                                <img src="./img/rabbit1.png" alt="lucky">
+                                            </div>
+                                            <div class="slide-title">Lucky 5</div>
+                                            <div class="slide-overview slide-overview_rabbit">Male Young Tabby (mixed)</div>
+                                            <div class="slide-price slide-price_rabbit">
+                                                <span class="slide-price-sale">$269</span>
+                                                <span class="slide-price-original text-decoration-line-through">$300</span>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="swiper-slide custom-slide">
+                                        <div class="slide-body">
+                                            <div class="slide-img">
+                                                <img src="./img/rabbit2.png" alt="lucky">
+                                            </div>
+                                            <div class="slide-title">Lucky 5</div>
+                                            <div class="slide-overview slide-overview_tabby">Male Young Tabby (mixed)</div>
+                                            <div class="slide-price slide-price_tabby">
+                                                <span class="slide-price-sale">$269</span>
+                                                <span class="slide-price-original text-decoration-line-through">$300</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-navs">
+                                    <button class="slider-nav slider-nav-prev">(</button>
+                                    <button class="slider-nav slider-nav-next">)</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-subs">
+            <div class="subs-container">
+                <div class="subs-content d-flex">
+                    <div class="subs-img">
+                        <img src="./img/puccimart.png" alt="puccimart">
+                    </div>
+                    <div class="subs-update">
+                        <h2 class="title subs-title">Subscribe for updates</h2>
+                        <form action="" class="subs-form">        
+                            <input type="email" class="subs-input" placeholder="Your Email Address">
+                            <button class="continue-button">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.49 9.31L9.31 7.49C9.43833 7.36167 9.5025 7.19833 9.5025 7C9.5025 6.80167 9.43833 6.63833 9.31 6.51L7.4725 4.6725C7.34417 4.54417 7.18387 4.4828 6.9916 4.4884C6.79887 4.49447 6.63833 4.56167 6.51 4.69C6.38167 4.81833 6.3175 4.98167 6.3175 5.18C6.3175 5.37833 6.38167 5.54167 6.51 5.67L7.14 6.3H4.8825C4.68417 6.3 4.52083 6.36697 4.3925 6.5009C4.26417 6.6353 4.2 6.80167 4.2 7C4.2 7.19833 4.2672 7.36447 4.4016 7.4984C4.53553 7.6328 4.70167 7.7 4.9 7.7H7.14L6.4925 8.3475C6.36417 8.47583 6.3028 8.63637 6.3084 8.8291C6.31447 9.02137 6.38167 9.18167 6.51 9.31C6.63833 9.43833 6.80167 9.5025 7 9.5025C7.19833 9.5025 7.36167 9.43833 7.49 9.31ZM7 14C6.03167 14 5.12167 13.8161 4.27 13.4484C3.41833 13.0811 2.6775 12.5825 2.0475 11.9525C1.4175 11.3225 0.918867 10.5817 0.5516 9.73C0.183867 8.87833 0 7.96833 0 7C0 6.03167 0.183867 5.12167 0.5516 4.27C0.918867 3.41833 1.4175 2.6775 2.0475 2.0475C2.6775 1.4175 3.41833 0.918633 4.27 0.5509C5.12167 0.183633 6.03167 0 7 0C7.96833 0 8.87833 0.183633 9.73 0.5509C10.5817 0.918633 11.3225 1.4175 11.9525 2.0475C12.5825 2.6775 13.0811 3.41833 13.4484 4.27C13.8161 5.12167 14 6.03167 14 7C14 7.96833 13.8161 8.87833 13.4484 9.73C13.0811 10.5817 12.5825 11.3225 11.9525 11.9525C11.3225 12.5825 10.5817 13.0811 9.73 13.4484C8.87833 13.8161 7.96833 14 7 14Z" fill="white"/>
+                                </svg>                                
+                            </button>
+                        </form>
+                        <div class="subs-contacts">
+                            <p class="title contacts-email">contact us: info@pucciMart.com</p>
+                            <ul class="contacts-cta d-flex">
+                                <li class="cta-item">
+                                    <a href="#" class="cta-link">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16.0893C0 24.044 5.77733 30.6587 13.3333 32V20.444H9.33333V16H13.3333V12.444C13.3333 8.444 15.9107 6.22267 19.556 6.22267C20.7107 6.22267 21.956 6.4 23.1107 6.57733V10.6667H21.0667C19.1107 10.6667 18.6667 11.644 18.6667 12.8893V16H22.9333L22.2227 20.444H18.6667V32C26.2227 30.6587 32 24.0453 32 16.0893C32 7.24 24.8 0 16 0C7.2 0 0 7.24 0 16.0893Z" fill="#07A081"/>
+                                        </svg>   
+                                    </a>
+                                </li>
+                                <li class="cta-item">
+                                    <a href="#" class="cta-link">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.6717 15.7217L14.9283 13.975C14.6017 13.8233 14.3333 13.9933 14.3333 14.355V17.645C14.3333 18.0067 14.6017 18.1767 14.9283 18.025L18.67 16.2783C18.9983 16.125 18.9983 15.875 18.6717 15.7217ZM16 0C7.16333 0 0 7.16333 0 16C0 24.8367 7.16333 32 16 32C24.8367 32 32 24.8367 32 16C32 7.16333 24.8367 0 16 0ZM16 22.5C7.81 22.5 7.66667 21.7617 7.66667 16C7.66667 10.2383 7.81 9.5 16 9.5C24.19 9.5 24.3333 10.2383 24.3333 16C24.3333 21.7617 24.19 22.5 16 22.5Z" fill="#07A081"/>
+                                        </svg>                                            
+                                    </a>
+                                </li>
+                                <li class="cta-item">
+                                    <a href="#" class="cta-link">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16 0C7.16429 0 0 7.16429 0 16C0 24.8357 7.16429 32 16 32C24.8357 32 32 24.8357 32 16C32 7.16429 24.8357 0 16 0ZM23.6893 12.0607C23.7 12.2286 23.7 12.4036 23.7 12.575C23.7 17.8179 19.7071 23.8571 12.4107 23.8571C10.1607 23.8571 8.075 23.2036 6.31786 22.0786C6.63929 22.1143 6.94643 22.1286 7.275 22.1286C9.13214 22.1286 10.8393 21.5 12.2 20.4357C10.4571 20.4 8.99286 19.2571 8.49286 17.6857C9.10357 17.775 9.65357 17.775 10.2821 17.6143C9.38474 17.432 8.57812 16.9446 7.99934 16.2349C7.42056 15.5253 7.10531 14.6372 7.10714 13.7214V13.6714C7.63214 13.9679 8.25 14.15 8.89643 14.175C8.35301 13.8128 7.90735 13.3222 7.59897 12.7465C7.29059 12.1709 7.12901 11.528 7.12857 10.875C7.12857 10.1357 7.32143 9.46071 7.66786 8.875C8.66394 10.1012 9.9069 11.1041 11.3159 11.8184C12.725 12.5328 14.2686 12.9427 15.8464 13.0214C15.2857 10.325 17.3 8.14286 19.7214 8.14286C20.8643 8.14286 21.8929 8.62143 22.6179 9.39286C23.5143 9.225 24.3714 8.88929 25.1357 8.43929C24.8393 9.35714 24.2179 10.1321 23.3929 10.6214C24.1929 10.5357 24.9643 10.3143 25.6786 10.0036C25.1393 10.7964 24.4643 11.5 23.6893 12.0607Z" fill="#07A081"/>
+                                        </svg>                                             
+                                    </a>
+                                </li>
+                                <li class="cta-item">
+                                    <a href="#" class="cta-link">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.9957 10.6645C13.0578 10.6645 10.6602 13.0621 10.6602 16C10.6602 18.9379 13.0578 21.3355 15.9957 21.3355C18.9336 21.3355 21.3312 18.9379 21.3312 16C21.3312 13.0621 18.9336 10.6645 15.9957 10.6645ZM31.9982 16C31.9982 13.7905 32.0182 11.6011 31.8941 9.39566C31.7701 6.83398 31.1857 4.56048 29.3125 2.68725C27.4352 0.810019 25.1657 0.229638 22.604 0.105556C20.3946 -0.0185251 18.2052 0.00148811 15.9997 0.00148811C13.7902 0.00148811 11.6008 -0.0185251 9.39536 0.105556C6.83368 0.229638 4.56019 0.814022 2.68696 2.68725C0.809722 4.56449 0.22934 6.83398 0.105259 9.39566C-0.0188226 11.6051 0.00119056 13.7946 0.00119056 16C0.00119056 18.2054 -0.0188226 20.3989 0.105259 22.6043C0.22934 25.166 0.813725 27.4395 2.68696 29.3127C4.56419 31.19 6.83368 31.7704 9.39536 31.8944C11.6048 32.0185 13.7943 31.9985 15.9997 31.9985C18.2092 31.9985 20.3986 32.0185 22.604 31.8944C25.1657 31.7704 27.4392 31.186 29.3125 29.3127C31.1897 27.4355 31.7701 25.166 31.8941 22.6043C32.0222 20.3989 31.9982 18.2095 31.9982 16ZM15.9957 24.2094C11.4527 24.2094 7.78631 20.543 7.78631 16C7.78631 11.457 11.4527 7.79061 15.9957 7.79061C20.5387 7.79061 24.2051 11.457 24.2051 16C24.2051 20.543 20.5387 24.2094 15.9957 24.2094ZM24.5413 9.37164C23.4806 9.37164 22.6241 8.51508 22.6241 7.45438C22.6241 6.39369 23.4806 5.53713 24.5413 5.53713C25.602 5.53713 26.4586 6.39369 26.4586 7.45438C26.4589 7.70625 26.4095 7.95571 26.3133 8.18846C26.217 8.42122 26.0758 8.6327 25.8977 8.8108C25.7196 8.98889 25.5082 9.13011 25.2754 9.22635C25.0426 9.32259 24.7932 9.37196 24.5413 9.37164Z" fill="#07A081"/>
+                                        </svg>                                            
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-ad">
+            <div class="ad-container">
+                <div class="ad-content d-flex">
+                    <div class="ad-description">
+                        <h2 class="title ad-title">Discount up to 50% Only this month.</h2>
+                        <div class="just-button ad-btn">
+                            <a href="#">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
