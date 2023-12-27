@@ -683,7 +683,8 @@ img {
 }
 .offer-card_top {
     justify-content: space-between;
-    margin-bottom: 53px;
+    margin-bottom: 85px;
+    align-items: flex-end;
 }
 .offer-rate {
     padding-bottom: 6px;
@@ -724,11 +725,8 @@ img {
     padding-left: 12px;
 }
 .offer-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 143px;
-    padding-top: 80px;
+    margin-right: 143px;
+    margin-bottom: -32px;
 }
 .offer-btn a {
     background: #07A081;
@@ -773,10 +771,10 @@ img {
 .replacement-cta {
     padding-left: 58px;
 }
-.cta-block_text p {
+.cta-block_text {
     text-decoration: none;
     margin: 0;
-    padding-left: 9px;
+    padding-left: 10px;
     color: #545454;
     font-family: Nunito;
     font-size: 20px;
